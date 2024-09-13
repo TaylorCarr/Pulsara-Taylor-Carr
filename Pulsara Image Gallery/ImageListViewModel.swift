@@ -20,14 +20,25 @@ class ImageListViewModel: ObservableObject {
             return nil
         }
     }
+
+// not currently used
+//    func imageTapped(id: Int) {
+//        
+//    }
     
-    func imageTapped(id: Int) {
-        
-    }
+    /*
+     Description: this function utilizes a DispatchQueue to fetch images from the API. The initial max is 100 images but if a user keeps scrolling, it will add 100 more as necessary.
+     Parameters:
+        - id: Int - this is the id of the individual image being fetched
+        - size: Int - this is the pixel size of the image
+     */
     
     private func fetchImage(id: Int, size: Int) {
         DispatchQueue.main.async {
             self.images[id] = (hasFetched: true, image: nil)
+            if (id + self.thresholdToAddMoreImages > self.maxImageId) {
+                self.maxImageId += 100
+            }
         }
         DispatchQueue.global(qos: .userInitiated).async {
             self.imageService.fetchImage(id: id, size: size) { imageData in

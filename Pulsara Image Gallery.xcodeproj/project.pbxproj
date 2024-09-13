@@ -13,6 +13,8 @@
 		2C6F9E0D2C93878D008620A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F9E0C2C93878D008620A9 /* Preview Assets.xcassets */; };
 		2C6F9E162C9387FE008620A9 /* ImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F9E152C9387FE008620A9 /* ImageListViewModel.swift */; };
 		2C6F9E182C939982008620A9 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F9E172C939982008620A9 /* ImageService.swift */; };
+		CEE70E3A2C93B697006C4A64 /* ImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE70E392C93B697006C4A64 /* ImageDetailView.swift */; };
+		CEE70E3F2C93DEEA006C4A64 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE70E3E2C93DEEA006C4A64 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,9 @@
 		2C6F9E0C2C93878D008620A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2C6F9E152C9387FE008620A9 /* ImageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewModel.swift; sourceTree = "<group>"; };
 		2C6F9E172C939982008620A9 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		CEE70E392C93B697006C4A64 /* ImageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailView.swift; sourceTree = "<group>"; };
+		CEE70E3D2C93DE28006C4A64 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CEE70E3E2C93DEEA006C4A64 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +63,12 @@
 				2C6F9E052C93878C008620A9 /* Pulsara_Image_GalleryApp.swift */,
 				2C6F9E152C9387FE008620A9 /* ImageListViewModel.swift */,
 				2C6F9E072C93878C008620A9 /* ImageListView.swift */,
+				CEE70E392C93B697006C4A64 /* ImageDetailView.swift */,
 				2C6F9E172C939982008620A9 /* ImageService.swift */,
 				2C6F9E092C93878D008620A9 /* Assets.xcassets */,
 				2C6F9E0B2C93878D008620A9 /* Preview Content */,
+				CEE70E3D2C93DE28006C4A64 /* README.md */,
+				CEE70E3E2C93DEEA006C4A64 /* Launch Screen.storyboard */,
 			);
 			path = "Pulsara Image Gallery";
 			sourceTree = "<group>";
@@ -131,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE70E3F2C93DEEA006C4A64 /* Launch Screen.storyboard in Resources */,
 				2C6F9E0D2C93878D008620A9 /* Preview Assets.xcassets in Resources */,
 				2C6F9E0A2C93878D008620A9 /* Assets.xcassets in Resources */,
 			);
@@ -147,6 +156,7 @@
 				2C6F9E182C939982008620A9 /* ImageService.swift in Sources */,
 				2C6F9E082C93878C008620A9 /* ImageListView.swift in Sources */,
 				2C6F9E062C93878C008620A9 /* Pulsara_Image_GalleryApp.swift in Sources */,
+				CEE70E3A2C93B697006C4A64 /* ImageDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +215,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -262,6 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -286,6 +298,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,6 +328,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

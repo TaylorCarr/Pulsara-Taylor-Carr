@@ -6,6 +6,7 @@ class ImageService {
     
     func fetchImage(id: Int, size: Int, completion: (Data) -> Void) {
         if let url = URL(string: "https://picsum.photos/id/\(id)/\(size)") {
+            
             if let imageData = try? Data(contentsOf: url) {
                 completion(imageData)
             }
@@ -23,6 +24,7 @@ class ImageService {
      */
     func fetchImageInfo(with id: Int, completionClosure: @escaping (Int?, String?, Int?, Int?, String?, String?) -> Void ) {
         let urlPath: String = "https://picsum.photos/id/\(id)/info"
+        print(urlPath)
         if let url: URL = URL(string: urlPath) {
             let defaultSession = Foundation.URLSession(configuration: URLSessionConfiguration.default)
 
